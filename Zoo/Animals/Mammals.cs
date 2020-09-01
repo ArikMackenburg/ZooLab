@@ -32,8 +32,9 @@ namespace Zoo.Animals
         }
     }
 
-    public class DuckBilledPlatypus : Mammal, iDrinkMilk, iCute
+    public class DuckBilledPlatypus : Mammal, iDrinkMilk, iCute ,iLayEggs
     {
+        public bool LayEggs {get => true; }
         public bool IsCute { get => false; }
         public bool DrinkMilk { get => true; }
         public DuckBilledPlatypus()

@@ -41,3 +41,6 @@ This lab was a pain I spent more time researching animals trying to come up with
 Honestly i cant come up with an explanation to tell you what each of the principles are
 
 Nor could i off the top of my head tell you which principle is doing what in the code
+# Interface 
++ i would describe them as extra things you can add on to objects?
++ added interface for lays eggs is cute and drinks milk
