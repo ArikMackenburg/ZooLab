@@ -12,7 +12,6 @@ namespace Zoo.Test
         public static void FennecFox_Is_Cute()
         {
             FennecFox fox = new FennecFox();
-            fox.IsCute = true;
             Assert.True(fox.IsCute);
         }
 
@@ -24,6 +23,7 @@ namespace Zoo.Test
             Assert.Equal("Murica!", baldy.Climate());
             Assert.Equal("Baldy", baldy.Name);
             Assert.False(baldy.ColdBlooded);
+            Assert.True(baldy.LayEggs);
         }
         [Fact]
         public static void Platypus_name_is_Perry()
@@ -45,8 +45,8 @@ namespace Zoo.Test
         {
             BaldEagle baldy = new BaldEagle();
             SeaTurtle squirt = new SeaTurtle();
-            Assert.Equal("I'm an animal", baldy.Animal());
-            Assert.Equal("I'm a cartoon", squirt.Animal());
+            Assert.Equal("I'm an animal", baldy.Origin());
+            Assert.Equal("I'm a cartoon", squirt.Origin());
         }
     }
 }

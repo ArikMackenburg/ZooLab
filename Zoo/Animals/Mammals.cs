@@ -5,15 +5,17 @@ using System.Text;
 
 namespace Zoo.Animals
 {
-    public abstract class Mammal : Animals
+    public abstract class Mammal : Animal
     {
         public override bool ColdBlooded => false;
 
 
     }
 
-    public class FennecFox : Mammal
+    public class FennecFox : Mammal, iDrinkMilk, iCute
     {
+        public bool IsCute { get => true; }
+        public bool DrinkMilk { get => true; }
         public override decimal WeightPounds => 2.2m;
 
         public override string Sound()
@@ -30,8 +32,11 @@ namespace Zoo.Animals
         }
     }
 
-    public class DuckBilledPlatypus : Mammal
+    public class DuckBilledPlatypus : Mammal, iDrinkMilk, iCute ,iLayEggs
     {
+        public bool LayEggs {get => true; }
+        public bool IsCute { get => false; }
+        public bool DrinkMilk { get => true; }
         public DuckBilledPlatypus()
         {
             Name = "Perry";
@@ -50,7 +55,7 @@ namespace Zoo.Animals
         {
             return "Australia";
         }
-        public override string Animal()
+        public override string Origin()
         {
             return "I'm a cartoon";
         }

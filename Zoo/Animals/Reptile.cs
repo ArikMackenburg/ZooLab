@@ -4,15 +4,16 @@ using System.Text;
 
 namespace Zoo.Animals
 {
-    public abstract class Reptile : Animals
+    public abstract class Reptile : Animal
     {
         public override bool ColdBlooded => true;
         public abstract bool Venomous { get; }
        
     }
 
-    public class Chameleon : Reptile
+    public class Chameleon : Reptile, iLayEggs
     {
+        public bool LayEggs { get => true; }
         public override decimal WeightPounds => 0.9m;
 
         public override bool Venomous => false;
@@ -31,8 +32,9 @@ namespace Zoo.Animals
         }
     }
 
-    public class SeaTurtle : Reptile
+    public class SeaTurtle : Reptile, iLayEggs
     {
+        public bool LayEggs { get => true; }
         public SeaTurtle()
         {
             Name = "Squirt";
@@ -52,7 +54,7 @@ namespace Zoo.Animals
         {
             return "Surfing the seven seas";
         }
-        public override string Animal()
+        public override string Origin()
         {
             return "I'm a cartoon";
         }
