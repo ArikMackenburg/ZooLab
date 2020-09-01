@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Zoo.Animals
 {
-    public abstract class Reptile : Animals
+    public abstract class Reptile : Animal
     {
         public override bool ColdBlooded => true;
         public abstract bool Venomous { get; }
@@ -54,7 +54,7 @@ namespace Zoo.Animals
         {
             return "Surfing the seven seas";
         }
-        public override string Animal()
+        public override string Origin()
         {
             return "I'm a cartoon";
         }

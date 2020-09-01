@@ -45,8 +45,8 @@ namespace Zoo.Test
         {
             BaldEagle baldy = new BaldEagle();
             SeaTurtle squirt = new SeaTurtle();
-            Assert.Equal("I'm an animal", baldy.Animal());
-            Assert.Equal("I'm a cartoon", squirt.Animal());
+            Assert.Equal("I'm an animal", baldy.Origin());
+            Assert.Equal("I'm a cartoon", squirt.Origin());
         }
     }
 }
