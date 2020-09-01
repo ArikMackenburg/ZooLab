@@ -11,8 +11,9 @@ namespace Zoo.Animals
        
     }
 
-    public class Chameleon : Reptile
+    public class Chameleon : Reptile, iLayEggs
     {
+        public bool LayEggs { get => true; }
         public override decimal WeightPounds => 0.9m;
 
         public override bool Venomous => false;
@@ -31,8 +32,9 @@ namespace Zoo.Animals
         }
     }
 
-    public class SeaTurtle : Reptile
+    public class SeaTurtle : Reptile, iLayEggs
     {
+        public bool LayEggs { get => true; }
         public SeaTurtle()
         {
             Name = "Squirt";

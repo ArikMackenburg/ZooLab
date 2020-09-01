@@ -12,8 +12,10 @@ namespace Zoo.Animals
 
     }
 
-    public class FennecFox : Mammal
+    public class FennecFox : Mammal, iDrinkMilk, iCute
     {
+        public bool IsCute { get => true; }
+        public bool DrinkMilk { get => true; }
         public override decimal WeightPounds => 2.2m;
 
         public override string Sound()
@@ -30,8 +32,10 @@ namespace Zoo.Animals
         }
     }
 
-    public class DuckBilledPlatypus : Mammal
+    public class DuckBilledPlatypus : Mammal, iDrinkMilk, iCute
     {
+        public bool IsCute { get => false; }
+        public bool DrinkMilk { get => true; }
         public DuckBilledPlatypus()
         {
             Name = "Perry";
