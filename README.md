@@ -33,3 +33,11 @@ NOTE: You are not required to be scientifically correct with your animal names. 
 Test that your program has the following functionality:
 
 + Test that each of your concrete animals exhibit the at least 2 appropriate behaviors given to them from a base class.
+
+## Intro 
+This lab was a pain I spent more time researching animals trying to come up with sensible ideas for classes than it took to write the code and i still am not even sure if i hit all of what i was supposed to hit because i got caught up in ideas for classes
+
+## Breakdown
+Honestly i cant come up with an explanation to tell you what each of the principles are
+
+Nor could i off the top of my head tell you which principle is doing what in the code
